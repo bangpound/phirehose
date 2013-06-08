@@ -140,7 +140,7 @@ abstract class OauthPhirehose extends Phirehose
 		$urlParts = parse_url($url);
 
 		// Setup params appropriately
-		$requestParams = array('delimited' => 'length');
+		$requestParams = array('delimited' => 'length', 'stall_warnings' => 'true');
 
 		// Filter takes additional parameters
 		if (count($this->trackWords) > 0)

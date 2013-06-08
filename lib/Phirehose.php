@@ -529,7 +529,7 @@ abstract class Phirehose
       $urlParts = parse_url($url);
       
       // Setup params appropriately
-      $requestParams = array('delimited' => 'length');
+      $requestParams = array('delimited' => 'length', 'stall_warnings' => 'true');
       
       // Filter takes additional parameters
       if ($this->method == self::METHOD_FILTER && count($this->trackWords) > 0) {
